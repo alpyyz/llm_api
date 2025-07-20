@@ -6,3 +6,10 @@ class TextRequest(BaseModel):
 
 class TextListRequest(BaseModel):
     texts: List[str]
+
+class IntroductionExtractionRequest(BaseModel):
+    raw_text: str
+
+class IntroductionExtractionResponse(BaseModel):
+    introduction_text: str
+    embedding: List[float]
