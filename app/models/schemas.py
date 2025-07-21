@@ -13,3 +13,15 @@ class IntroductionExtractionRequest(BaseModel):
 class IntroductionExtractionResponse(BaseModel):
     introduction_text: str
     embedding: List[float]
+
+class SummarizationRequest(BaseModel):
+    text: str
+
+class SummarizationResponse(BaseModel):
+    summary: str
+
+class EmbeddingRequest(BaseModel):
+    text: str
+
+class EmbeddingResponse(BaseModel):
+    embedding: List[float]
