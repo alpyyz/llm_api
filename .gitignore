@@ -26,4 +26,4 @@ log.txt
 # Data files
 *.csv
 *.pdf
-gpt_api_key.txt
+*.yaml
